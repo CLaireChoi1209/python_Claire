@@ -72,5 +72,33 @@ for 변수 in range(시작,끝,증감):
 # for i in range(25, 36):
 #     print(i)
 
-for i in range(2, 11, 2):
+# for i in range(2, 11, 2):
+#     print(i)
+
+
+for i in range(7):  # =7번반복 1번
+    print("내일은 토요일")
+
+for i in range(3, 11, 3):  # =1~10중에 3배수 2번번
     print(i)
+
+sum = 0  # =1~20 4배수 아닌수
+for i in range(1, 21, 1):
+    if i % 4 != 0:
+        sum += i
+
+print(sum)
+
+for i in range(50, 101): #50~100까지 3,4 공배수
+    if i % 3 == 0:
+        if i % 4 == 0:
+            print(i)
+
+sum = 0
+mul = 1
+for i in range(1, 101): #1~100까지수중 짝수의 합 - 홀수의 합
+    if i % 2 == 0:
+        mul += i
+    if i % 2 == 1:
+        sum += i
+print(mul - sum)
