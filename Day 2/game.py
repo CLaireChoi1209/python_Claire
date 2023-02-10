@@ -1,9 +1,10 @@
 import random
 
+
 def baseball_game():
     # generate random 3-digit number
     target = random.sample(range(1, 10), 3)
-    target = ''.join(map(str, target))
+    target = "".join(map(str, target))
     print("Welcome to the number baseball game!")
     print("I have a 3-digit number in mind. Try to guess it.")
     print("You have 10 chances. Good luck!")
@@ -22,6 +23,7 @@ def baseball_game():
     else:
         print("Sorry, you lost. The target was", target)
 
+
 def check_guess(guess, target):
     strikes = 0
     balls = 0
@@ -31,5 +33,6 @@ def check_guess(guess, target):
         elif guess[i] in target:
             balls += 1
     return strikes, balls
+
 
 baseball_game()
