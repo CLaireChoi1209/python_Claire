@@ -128,7 +128,7 @@ print(a.index(300))
 print(a[0])
 print(a[1])
 print(a[2])
-
+0
 b = [1, 20, 30, 40]
 print(b[-1] * b[2])
 print(b[-2] % b[1])
